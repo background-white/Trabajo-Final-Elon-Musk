@@ -43,3 +43,43 @@ btnLeft.addEventListener('click',function(){
 setInterval(function(){
     Next();
 },3000);
+
+
+
+//Galeria
+
+let rsultado = document.getElementById("resultado");
+
+function replace1() {
+    let img1 = document.getElementById("img1").getAttribute('src');
+    resultado.setAttribute('src',img1);
+}
+function replace2() {
+    let img2 = document.getElementById("img2").getAttribute('src');
+    resultado.setAttribute('src',img2);
+}
+function replace3() {
+    let img3 = document.getElementById("img3").getAttribute('src');    
+    resultado.setAttribute('src',img3);
+}
+function replace4() {
+    let img4 = document.getElementById("img4").getAttribute('src');    
+    resultado.setAttribute('src',img4);
+}
+
+
+
+
+img1.addEventListener('click',function(){
+    replace1();
+})
+img2.addEventListener('click',function(){
+    replace2();
+})
+img3.addEventListener('click',function(){
+    replace3();
+})
+img4.addEventListener('click',function(){
+    replace4();
+})
+
