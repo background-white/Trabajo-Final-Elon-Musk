@@ -121,19 +121,28 @@
                 <img src="./img/galeria5.jfif" id="resultado" alt="">
             </div>
         </div>
-        
+
     </div>
     <hr>
     <footer>
         <div class="suscripcion">
             <div>
                 <h2>Suscribete</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi obcaecati et odio animi praesentium placeat sit vero ex sequi minus totam repellat magnam tempora libero, alias dolor facere culpa commodi?Lorem ipsum dolor sit, amet consectetur adipisicing elit. A praesentium laboriosam alias. Ducimus rerum voluptas et perferendis quis eveniet aliquam delectus eum doloribus, itaque quasi, quos optio aliquid, enim consequatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus et voluptatum maiores, dolore, quis neque sed illo totam voluptatibus provident officia quos aspernatur iusto dolor deserunt omnis ea exercitationem similique.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi obcaecati et odio animi
+                    praesentium placeat sit vero ex sequi minus totam repellat magnam tempora libero, alias dolor facere
+                    culpa commodi?Lorem ipsum dolor sit, amet consectetur adipisicing elit. A praesentium laboriosam
+                    alias. Ducimus rerum voluptas et perferendis quis eveniet aliquam delectus eum doloribus, itaque
+                    quasi, quos optio aliquid, enim consequatur! Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Natus et voluptatum maiores, dolore, quis neque sed illo totam voluptatibus provident officia
+                    quos aspernatur iusto dolor deserunt omnis ea exercitationem similique.</p>
             </div>
             <div class="form">
-                <h3>Direccion Gmail *</h3>
-                <input type="email" placeholder="Ingresar su Email"><br>
-                <button class="btn">Enviar</button>
+                <form id="my-form" action="https://formspree.io/f/mrgdddbj" method="POST">
+                    <h3>Direccion Gmail *</h3>
+                    <input type="email" name="email" placeholder="Ingresar su Email"><br>
+                    <button class="btn" id="my-form-button">Enviar</button>
+                    <p id="my-form-status"></p>
+                </form>
             </div>
         </div>
         <hr>
