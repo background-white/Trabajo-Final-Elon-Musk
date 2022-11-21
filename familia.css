@@ -1,0 +1,246 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --bg-titulo-color: #13293D;
+  --contenido-h2:#247BA0;
+  --h5-color:#d1d0d0;
+  --contenido-p: #1B98E0;
+  --text-color: #ffffff;
+  --bg-contenedor: #161616;
+  --boton-hover:#dfbcbc;
+}
+
+/*menu*/
+ .menu{
+  display: flex;
+	list-style: none;
+	padding: 10;
+	background: #212325;
+	width: 100%;
+	max-width: 10000px;
+	margin: auto;
+ }
+
+ .menu li a{
+	text-decoration: none;
+	color: var(--text-color);
+	padding: 30px;
+	display: block;
+  font-size: 20px;
+ }
+
+ .menu li{
+	display: inline-block;
+	text-align:center;
+ }
+
+ .menu li a:hover{
+	background: #1164b3;
+  transform:skew(-10deg);
+ }
+
+ .menu img{
+  width:50px;
+  height: 50px;
+  margin-top: 10px;
+ }
+/*titulo*/
+.tituloprincipal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img\ familia/titulo-fondo.jpg);
+  height: 100px;
+}
+
+.titulo-texto{
+  font-family: 'Space Mono', monospace;
+  color: var(--text-color);
+  letter-spacing: 2px;
+}
+
+
+/*contenedor*/
+.contenedor{
+  background-image: linear-gradient(#222323,#898282);
+  color:var(--text-color);
+  font-family: 'Inconsolata', monospace;
+}
+.sub-contenedor{
+  padding: 20px;
+}
+
+.contenido-h2{
+  background-color: var(--contenido-h2);
+}
+
+.contenido-h5{
+color: var(--h5-color);
+}
+
+.contenido-p{
+  background-color: var(--contenido-p);
+}
+
+.contenido-h2, .contenido-h5, .contenido-p{
+  padding: 10px;
+  border-radius: 5px;
+  transform:skew(-10deg);
+  letter-spacing: 2px;
+}
+
+/*carrusel*/
+
+.carrusel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenedor-imgs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  padding: 20px;
+}
+.contenedor-imgs .slide{
+  position: absolute;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .5s;
+}
+
+.slide:target{
+  opacity: 1;
+}
+.contenedor-imgs div img{
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.contenedor-imgs div:first-child{
+  opacity: 1;
+}
+
+/*botones de desplazamiento*/
+
+.contenedor-botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.boton{
+  display: inline-block;
+  text-align: center;
+  background-color: var(--bg-titulo-color);
+  padding: 5px;
+  width: 60px;
+  height: 7px;
+  margin: 15px;
+  font-size: 12px;
+  border-radius: 5px;
+  transform:skew(-10deg);
+}
+
+.boton a{
+  color: white;
+  text-decoration: none;
+  text-align:start;
+}
+
+.boton:hover{
+  background-image: linear-gradient(#ffffff,#000000);
+}
+
+/*footer*/
+footer {
+  background: #181818;
+  padding-top: 3rem;
+}
+
+footer .footer-title {
+  color: var(--contenido-p);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+footer .footer-description {
+  color: var(--text-color);
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+footer .footer-section-title {
+  color: var(--contenido-p);
+}
+
+footer .section-description {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+
+footer .section-description .contact-icon {
+  font-size: 1.rem;
+  margin-right: 0.3rem;
+}
+
+footer .social-wrapper .social-link {
+  text-decoration: none;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+
+footer .social-wrapper .social-link svg {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: solid 1.5px #fff;
+}
+
+footer .links {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .copyright .copy {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+footer .copyright .terms ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+footer .copyright .terms ul li {
+  margin-right: 2rem;
+}
+
+footer .copyright .terms ul li:last-child {
+  margin-right: 0;
+}
+
+footer .copyright .terms ul li a {
+  color: var(--text-color);
+  font-weight: 500;
+  text-decoration: none;
+}
