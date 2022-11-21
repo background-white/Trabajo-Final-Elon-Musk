@@ -1,0 +1,215 @@
+html {
+    font-size: 14px;
+}
+
+
+body{
+    background: #292b2c;
+}
+
+.row {
+    margin-bottom: 1rem;
+}
+
+ /*MENU*/
+
+.menu{
+    list-style: none;  
+    padding: 10px;
+    background: #212325;
+    width: 100%;
+    max-width: 10000px;
+    margin: auto;
+    align-items:flex-start;
+    text-align: right;
+}
+
+.menu .imagen{
+    text-align: left;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    display: block;
+    font-size: 20px;
+    
+}
+  
+.menu li{
+    display: inline-block;
+    text-align:center;
+
+}
+
+.menu li a:hover{
+  background: #1164b3;
+  
+}
+
+main {
+    margin-top: 4em;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: #fff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.service-wrapper {
+    -webkit-box-shadow: 8px 7px 10px 0px rgba(145,146,153,0.72);
+    -moz-box-shadow: 8px 7px 10px 0px rgba(145,146,153,0.72);
+    box-shadow: 8px 7px 10px 0px rgba(145,146,153,0.72);
+    background: #fff;
+    padding: 1rem;
+    transition: all ease-in-out 0s;
+}
+
+.service-wrapper .service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-wrapper .service-header .service-img-wrapper {
+    max-width: 10rem;
+}
+
+.service-wrapper .service-header .service-img {
+    width: 100%;
+}
+
+.service-wrapper .service-header .service-number {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.service-wrapper .service-body .service-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.service-wrapper .service-body .service-description {
+    color: rgba(0, 0, 0, 0.8);
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.service-wrapper:hover {
+    background:#13293D;
+}
+
+.service-wrapper:hover .service-header .service-number,
+.service-wrapper:hover .service-body .service-title,
+.service-wrapper:hover .service-body .service-description {
+    background:#13293D;
+    color: #fff;
+}
+
+footer {
+    background: #181818;
+    padding-top: 3rem;
+    margin-top: 4rem;
+}
+
+
+
+footer .footer-title {
+    color: #1B98E8;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+footer .footer-description {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+footer .footer-section-title {
+    color:#1B98E8;
+}
+
+footer .section-description {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+footer .section-description .contact-icon {
+    font-size: 1.rem;
+    margin-right: 0.3rem;
+}
+
+footer .social-wrapper .social-link {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+}
+
+footer .social-wrapper .social-link svg {
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: solid 1.5px #fff;
+}
+
+footer .links {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .copyright .copy {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .copyright .terms ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+footer .copyright .terms ul li {
+    margin-right: 2rem;
+}
+
+footer .copyright .terms ul li:last-child {
+    margin-right: 0;
+}
+
+footer .copyright .terms ul li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background:#1B98E8;
+    border: #181818;
+}
